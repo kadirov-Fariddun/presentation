@@ -24,9 +24,9 @@ window.onscroll = function() {
 		if(window.scrollY >= 3137){
 			// const lastForm = document.querySelector('.last_form');
 			frames[frames.length - 1].setAttribute('style', `transform: translateZ(0); opacity: 1`);
+			window.scrollTo(0,window.scrollY);
 			// n.classList.add('focus')
 		}else{
-			// frame.classList.remove('focus')
 		}
 	})
 
