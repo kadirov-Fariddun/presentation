@@ -20,8 +20,10 @@ window.onscroll = function() {
 				transform = `translateZ(${zVals[i]}px)`,
 				opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
 		frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`);
-		if(window.scrollY == 3137){
+		console.log(window.scrollY);
+		if(window.scrollY >= 3137){
 			frame.setAttribute('style', `transform: 0; opacity: 1`);
+			
 		}
 	})
 
