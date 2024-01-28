@@ -22,8 +22,11 @@ window.onscroll = function() {
 		frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`);
 		console.log(window.scrollY);
 		if(window.scrollY >= 3137){
-			frame.setAttribute('style', `transform: 0; opacity: 1`);
-			
+			// const lastForm = document.querySelector('.last_form');
+			frames[frames.length - 1].setAttribute('style', `transform: translateZ(0); opacity: 1`);
+			// n.classList.add('focus')
+		}else{
+			// frame.classList.remove('focus')
 		}
 	})
 
