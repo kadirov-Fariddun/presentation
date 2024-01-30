@@ -19,6 +19,9 @@ body {
 body::-webkit-scrollbar { 
 	display: none; /* Safari and Chrome */
 }
+a{
+	text-decoration: none;
+}
 
 @font-face {
 	font-family: raleway_c;
@@ -172,6 +175,8 @@ video.frame-media_left {
 	display: block;
 	color: aquamarine;
 	text-decoration: none;
+	z-index: 1000;
+	position: relative;
 }
 .lh-400{
 	line-height: 90px;
@@ -224,4 +229,32 @@ video.frame-media_left {
 	.lh-400{
 		line-height: 60px !important;
 	}
+}
+
+.last_form{
+	height: 100%;
+	width: 100%;
+}
+.last_form .frame__content{
+	text-align: center;
+}
+.last_form .frame__content h1{
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 600;
+}
+.last_form .frame__content p{
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+	display: block;
+	width: 100%;
+}
+.last_form .frame__content p span{
+	text-align: center;
+	width: 100%;
+	display: block;
+	width: 100%;
+	color: rgb(255, 94, 0);
 }
