@@ -190,15 +190,19 @@ video.frame-media_left {
 	border: 1px solid #fafafa;
 	align-items: center;
 	justify-content: center;
-	width: 102px;
+	width: 152px;
 	height: 52px;
 }
 
 .logo div{
-	width: 50px;
+	width: 75px;
 	height: 50px;
 	position: relative;
 	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 .logo div:last-child{
 	background-color: #111111;
@@ -211,22 +215,19 @@ video.frame-media_left {
 	width: 100%;
 	text-align: center;
 	color: #fafafa;
+	font-weight: 900;
 }
 .logo div:first-child p,
 .logo div:first-child span
 {
 	color: #111111;
-	font-weight: 900;
+	
 }
 .logo div p{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 10px;
+	font-size: 14px;
 	color: #fafafa;
 	font-weight: 700;
-	
+	font-weight: 900;
 }
 
 .last-text{
