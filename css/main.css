@@ -216,6 +216,7 @@ video.frame-media_left {
 	text-align: center;
 	color: #fafafa;
 	font-weight: 900;
+	text-transform: uppercase;
 }
 .logo div:first-child p,
 .logo div:first-child span
@@ -228,6 +229,7 @@ video.frame-media_left {
 	color: #fafafa;
 	font-weight: 700;
 	font-weight: 900;
+	text-transform: uppercase;
 }
 
 .last-text{
