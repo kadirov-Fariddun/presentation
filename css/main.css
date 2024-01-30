@@ -173,7 +173,22 @@ video.frame-media_left {
 	color: aquamarine;
 	text-decoration: none;
 }
-
+.lh-400{
+	line-height: 90px;
+}
+.logo{
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+}
+.logo img{
+	max-width: 100px;
+}
+.last-text{
+	z-index: 100;
+}
 @media(max-width:400px){
 	.title-3{
 		padding-left: 40px;
@@ -201,10 +216,12 @@ video.frame-media_left {
 		font-size: 16px;
 	}
 	.last-text{
-		max-width: 70%;
-		z-index: 100;
+		max-width: 50% !important;
 	}
 	.mw-400-none{
 		display: none;
+	}
+	.lh-400{
+		line-height: 60px !important;
 	}
 }

@@ -18,10 +18,10 @@ window.onscroll = function() {
 		zVals[i] += delta * -5.5
 		let frame = frames[i],
 				transform = `translateZ(${zVals[i]}px)`,
-				opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
+				opacity = zVals[i] < Math.abs(zSpacing) / 1.5 ? 1 : 0
 		frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`);
 		console.log(window.scrollY);
-		if(window.scrollY >= 3137){
+		if(window.scrollY >= 3250){
 			// const lastForm = document.querySelector('.last_form');
 			frames[frames.length - 1].setAttribute('style', `transform: translateZ(0); opacity: 1`);
 			window.scrollTo(0,window.scrollY);
