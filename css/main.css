@@ -268,7 +268,7 @@ video.frame-media_left {
 	width: 100%;
 	display: block;
 	width: 100%;
-	color: rgb(255, 94, 0);
+	color: #fafafa;
 }
 .last_form form{
 	display: flex;
@@ -288,7 +288,7 @@ video.frame-media_left {
 	outline: none;
 	transition: .5s;
 	border: none;
-	border-bottom: 2px solid rgb(255, 94, 0);
+	border-bottom: 2px solid #075E54;
 }
 /* .last_form form input:last-child{
 	width: 50%;
@@ -343,18 +343,42 @@ video.frame-media_left {
 	fill: #fafafa;
 	transition: .5s;
 }
-.form-footer-link:last-child{
+.form-footer-link:nth-child(2){
 	border-color: #24A1DE;
 }
-.form-footer-link:last-child:hover{
+.form-footer-link:nth-child(2):hover{
 	background-color: #24A1DE;
 	transition: .5s;
 }
-.form-footer-link:last-child:hover svg{
+.form-footer-link:nth-child(2):hover svg{
 	fill: #fafafa;
 	transition: .5s;
 }
+.email{
+	position: relative;
+	transition: .5s;
+}
+.email::before{
+	content: "d.alfadiesel@yandex.ru";
+	transition: .5s;
+	position: absolute;
+	top: -10px;
+	right: -750%;
+	font-weight: 900;
+	padding: 0px 10px;
+	color: #000;
+	background-color: #fafafa;
+	border-radius: 20px;
+	/* opacity: 1; */
+	display: none;
+}
+.email:hover::before{
+	transition: .5s;
+	/* opacity: 1; */
+	right: -650%;
 
+	display: block;
+}
 .footer-bottom-tel{
 	display: flex;
 	align-items: center;
