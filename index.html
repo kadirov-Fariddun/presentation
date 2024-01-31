@@ -7,6 +7,8 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+	<script src="https://unpkg.com/imask" defer></script>
 	<script src="js/app.js" defer></script>
 
 </head>
@@ -178,9 +180,9 @@
 						<span>Оставляйте предзаказ!</span>
 						<span>Оставляйте заявку – мы вам перезвоним</span>
 					</p>
-					<form action="#">
-						<input type="text" placeholder="Ваше Имя" required maxlength="60">
-						<input type="text" placeholder="Телефон Номер" required maxlength="60">
+					<form class="form-send">
+						<input type="text" placeholder="Ваше Имя" required maxlength="60" name="name">
+						<input type="text" placeholder="+7(000)-000-00-00" required maxlength="60" name="phone" id="phone">
 						<button type="submit">Отправить</button>
 					</form>
 					<div class="form-footer">
