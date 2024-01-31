@@ -20,10 +20,17 @@ window.onscroll = function() {
 				transform = `translateZ(${zVals[i]}px)`,
 				opacity = zVals[i] < Math.abs(zSpacing) / 1.5 ? 1 : 0
 		frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`);
+		// if(frame.style.opacity == '0'){
+		// 	// frame.classList.add('is-no-view')
+		// 	frame.style.display = 'none'
+		// } else{
+		// 	frame.classList.remove('is-no-view')
+		// }
 		console.log(window.scrollY);
 		if(window.scrollY >= 3250){
 			// const lastForm = document.querySelector('.last_form');
-			frames[frames.length - 1].setAttribute('style', `transform: translateZ(0); opacity: 1`);
+			frames[frames.length - 1].setAttribute('style', `transform: translateZ(500); opacity: 1;z-index:10000;`);
+			
 			window.scrollTo(0,window.scrollY);
 			// n.classList.add('focus')
 		}else{
@@ -93,3 +100,13 @@ sendOrderForm.onsubmit = async (e) => {
  }
 
 
+ // обрабатываем лоадинг
+ const load = document.querySelector('.loading');
+ document.querySelector('body').onload = ()=>{
+	setTimeout(() => {
+		load.style.opacity = '0';
+		setTimeout(() => {
+			load.style.display = 'none !important';
+		}, 500);
+	}, 1500);
+ }

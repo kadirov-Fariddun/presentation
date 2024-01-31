@@ -185,8 +185,8 @@
 						<span>Оставляйте заявку – мы вам перезвоним</span>
 					</p>
 					<form class="form-send">
-						<input type="text" placeholder="Ваше Имя" required maxlength="60" name="name">
-						<input type="text" placeholder="+7(000)-000-00-00" required maxlength="60" name="phone" id="phone">
+						<input type="text" placeholder="Ваше Имя" required maxlength="60" name="name" autocomplete="off">
+						<input type="text" placeholder="+7(000)-000-00-00" autocomplete="off" required maxlength="60" name="phone" id="phone">
 						<button type="submit">Отправить</button>
 					</form>
 					<div class="form-footer">
@@ -200,20 +200,26 @@
 								<path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path>
 							</svg>
 						</a>
-						<a href="mailto:d.alfadiesel@yandex.ru" class="email">
+					</div>
+					<p class="email">
+						<a href="mailto:d.alfadiesel@yandex.ru" >
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fafafa">
 								<path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path>
 								<path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
-							</svg>
-						</a>
-					</div>
+							</svg>d.alfadiesel@yandex.ru
+					    </a>
+				</p>
 					<p class="footer-bottom-tel">Звонить прямой сейчас <a href="tel:+79053333787" class="cr fw">+79053333787</a></p>
 					<p>© АЛЬФА ДИЗЕЛЬ</p>
 				</div>
 			</div>
-
+			
 		</section>
+		<div class="loading">
+			<img src="./images/loading.GIF" alt="loading..." width="500px"/>
+		</div>
 	</div>
+	
 
 	<img class="soundbutton paused" src="images/sound.gif" alt="Alt">
 	<audio class="audio" src="media/ambient.mp3" loop></audio>
