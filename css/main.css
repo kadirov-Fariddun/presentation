@@ -234,7 +234,7 @@ video.frame-media_left {
 
 .last-text{
 	z-index: 100;
-	max-width: 23% !important;
+	max-width: 100% !important;
 }
 
 
@@ -419,9 +419,9 @@ video.frame-media_left {
 		opacity: 1;
 		font-size: 16px;
 	}
-	.last-text{
+	/* .last-text{
 		max-width: 50% !important;
-	}
+	} */
 	.mw-400-none{
 		display: none;
 	}
