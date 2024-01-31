@@ -8,7 +8,7 @@
 	--gutter: 30px;
 	--side-small: 26;
 	--side-big: 36;
-	--depth: 4000px;
+	--depth: 5500px;
 	--transition: .75s cubic-bezier(.075, .5, 0, 1)
 }
 
@@ -279,7 +279,7 @@ video.frame-media_left {
 
 .last_form form input{
 	height: 40px;
-	width: 60%;
+	width: 70%;
 	padding: 0 15px;
 	font-size: 16px;
 	background-color: transparent;
@@ -355,10 +355,12 @@ video.frame-media_left {
 	transition: .5s;
 }
 .email{
+	border: none;
 	position: relative;
 	transition: .5s;
+	/* z-index: 1000; */
 }
-.email::before{
+/* .email::before{
 	content: "d.alfadiesel@yandex.ru";
 	transition: .5s;
 	position: absolute;
@@ -369,15 +371,36 @@ video.frame-media_left {
 	color: #000;
 	background-color: #fafafa;
 	border-radius: 20px;
-	/* opacity: 1; */
+	opacity: 1;
 	display: none;
-}
-.email:hover::before{
+} */
+/* .email:hover::before{
 	transition: .5s;
-	/* opacity: 1; */
+	opacity: 1;
 	right: -650%;
 
 	display: block;
+} */
+
+.email{
+	
+	margin: 20px 0;
+}
+.email a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fafafa;
+	transition: .5s;
+}
+.email a:hover,.email a:hover svg{
+	transition: .5s;
+	color: #ff2400;
+	fill: #ff2400;
+}
+.email a svg{
+	margin-right: 10px;
+	transition: .5s;
 }
 .footer-bottom-tel{
 	display: flex;
