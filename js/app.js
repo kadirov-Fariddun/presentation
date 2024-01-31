@@ -106,7 +106,7 @@ sendOrderForm.onsubmit = async (e) => {
 	setTimeout(() => {
 		load.style.opacity = '0';
 		setTimeout(() => {
-			load.style.display = 'none !important';
+			load.style.display = 'none';
 		}, 500);
 	}, 1500);
  }
