@@ -177,6 +177,7 @@ video.frame-media_left {
 	text-decoration: none;
 	z-index: 1000;
 	position: relative;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .lh-400{
 	line-height: 90px;
@@ -422,6 +423,12 @@ video.frame-media_left {
 	background-color: red;
 	width: 0%;
 	transition: .5s;
+}
+.footer-text,.footer-contact-tel{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 900 !important;
+	font-size: 19px;
+	letter-spacing: .5px;
 }
 .footer-bottom-tel a:hover::before{
 	transition: .5s;
