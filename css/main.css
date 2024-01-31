@@ -234,6 +234,7 @@ video.frame-media_left {
 
 .last-text{
 	z-index: 100;
+	max-width: 23% !important;
 }
 
 
@@ -360,7 +361,7 @@ video.frame-media_left {
 
 }
 .footer-bottom-tel a{
-	color: aqua;
+	color: red;
 	margin-left: 5px;
 	transition: .5s;
 	position: relative;
@@ -371,7 +372,7 @@ video.frame-media_left {
 	bottom: -5px;
 	left: 0;
 	height: 1px;
-	background-color: aqua;
+	background-color: red;
 	width: 0%;
 	transition: .5s;
 }
@@ -380,7 +381,7 @@ video.frame-media_left {
 	width: 100%;
 }
 .cr{
-	color: red;
+	color: red !important;
 }
 .fw{
 	font-weight: 900;
