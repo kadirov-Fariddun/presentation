@@ -440,13 +440,146 @@ video.frame-media_left {
 .fw{
 	font-weight: 900;
 }
+
+
+/*map*/
+.footer-map{
+	width: 100%;
+	height: 100%;
+	background-image:url('../images/map.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.footer-map li{
+	list-style-type: none;
+	position: fixed;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.footer-map li p{
+	display: inline-block;
+	width: fit-content !important;
+	cursor: pointer;
+    padding: 2px 6px;
+    z-index: 1;
+    font-size: 13px !important;
+    line-height: 18px;
+    color: #fff;
+    text-shadow: 3px 5px 10px rgba(0,0,2,.4);
+    box-shadow: 0 0 13px rgba(109,101,82,.39);
+    border: solid 1px #656253;
+	background: linear-gradient(to top, #858170, #656253 36%, #858170);
+	border-radius: 5px;
+	z-index: 10;
+	position: relative;
+	left: 60px;
+	top: -40px;
+}
+.footer-map li.active p {
+	color: #fafafa;
+	background: red;
+}
+.footer-map li span{
+	width:10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+}
+.footer-map li.active span{
+	display: block;
+}
+.footer-map li span::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: rgb(0,0,0,.1);
+	display: none;
+}
+.footer-map li.active span::before{
+	animation: circle-map .8s linear infinite;
+	display: block;
+}
+.footer-map li:nth-child(1){
+	left: 45.25%;
+	top: 3.7%;
+	width: 250px;
+	height: 250px;
+	
+}
+.footer-map li:nth-child(2){
+	left: 28.5%;
+	top: 21.8%;
+	width: 250px;
+	height: 250px;
+	
+}
+.footer-map li:nth-child(3){
+	left:46.8%;
+	top: 38.6%;
+	width: 250px;
+	height: 250px;
+	
+}
+.footer-map li:nth-child(4){
+	left:62.7%;
+	top: 29.5%;
+	width: 250px;
+	height: 250px;
+	
+}
+.footer-map li:nth-child(5){
+	left:17.7%;
+	top: 42.2%;
+	width: 250px;
+	height: 250px;
+}
+.footer-map li:nth-child(6){
+	left:22.7%;
+	top: 48.71%;
+	width: 250px;
+	height: 250px;
+}
+.footer-map li:nth-child(7){
+	left:38.3%;
+	top: 46.5%;
+	width: 250px;
+	height: 250px;
+}
+@keyframes circle-map{
+	0%{
+		width: 10px;
+		height: 10px;
+	}
+	100%{
+		width: 250px;
+		height: 250px;
+
+	}
+} 
+
+
 /* медиа */
 
-@media(max-width:500px){
+/* @media(max-width:500px){
 	/* .logo img{
 		max-width: 50px;
-	} */
-}
+	} 
+} */
 @media(max-width:400px){
 	.title-3{
 		padding-left: 40px;
